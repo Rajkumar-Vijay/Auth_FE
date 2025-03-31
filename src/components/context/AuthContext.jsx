@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
   // Register user
   const register = async (userData) => {
     try {
-      const response = await fetch('http://localhost:4000/api/auth/user/register', {
+      const response = await fetch('https://auth-be-nxp3.onrender.com/api/auth/user/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
