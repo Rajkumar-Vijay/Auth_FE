@@ -102,7 +102,7 @@ export const AuthProvider = ({ children }) => {
   // Reset password
   const resetPassword = async (resetToken, password) => {
     try {
-      const response = await fetch(`http://localhost:4000/api/auth/user/reset-password/${resetToken}`, {
+      const response = await fetch(`https://auth-be-nxp3.onrender.com/api/auth/user/reset-password/${resetToken}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
