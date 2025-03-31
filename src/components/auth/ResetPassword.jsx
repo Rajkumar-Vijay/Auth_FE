@@ -33,7 +33,7 @@ const ResetPassword = () => {
     try {
       console.log('Resetting password with token:', resetToken);
 
-      const response = await fetch(`http://localhost:4000/api/auth/user/reset-password/${resetToken}`, {
+      const response = await fetch(`https://auth-be-nxp3.onrender.com/api/auth/user/reset-password/${resetToken}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
