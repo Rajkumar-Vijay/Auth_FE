@@ -18,7 +18,7 @@ const ForgotPassword = () => {
     try {
       console.log('Sending forgot password request for:', email);
 
-      const response = await fetch('http://localhost:4000/api/auth/user/forgot-password', {
+      const response = await fetch('https://auth-be-nxp3.onrender.com/api/auth/user/forgot-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
