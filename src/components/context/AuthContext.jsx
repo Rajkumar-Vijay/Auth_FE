@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
   // Login user
   const login = async (email, password) => {
     try {
-      const response = await fetch('http://localhost:4000/api/auth/user/login', {
+      const response = await fetch('https://auth-be-nxp3.onrender.com/api/auth/user/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -78,7 +78,7 @@ export const AuthProvider = ({ children }) => {
   // Forgot password
   const forgotPassword = async (email) => {
     try {
-      const response = await fetch('http://localhost:4000/api/auth/user/forgot-password', {
+      const response = await fetch('https://auth-be-nxp3.onrender.com/api/auth/user/forgot-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
